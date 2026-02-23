@@ -18,26 +18,12 @@ A small Python utility to scrape job listings and save them to a CSV file.
 - Python 3.10 or newer
 - Optional: a virtual environment for isolation
 
-## Quickstart (Windows)
-
-1. Create and activate a virtual environment (optional but recommended):
+## Quickstart 
 
 ```powershell
-python -m venv .venv
-& .\.venv\Scripts\Activate.ps1
+uv run scrape_jobs
 ```
 
-2. Install dependencies (if any are listed in `pyproject.toml`):
-
-```powershell
-pip install -r requirements.txt  # or follow pyproject.toml/poetry instructions
-```
-
-3. Run the scraper from the repository root:
-
-```powershell
-python src\scrape_jobs\scraper.py
-```
 
 Running the script produces `jobs.csv` in the repository root.
 
