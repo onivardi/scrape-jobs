@@ -61,4 +61,5 @@ Contributions are welcome. Open an issue or submit a pull request with a clear d
 
 - This project is a starting point. If you plan to scrape third-party websites, ensure you follow their `robots.txt` rules and terms of service.
 - Add a `requirements.txt` or pin dependencies in `pyproject.toml` before deploying or sharing.
+- ROADMAP [https://roadmap.sh/projects/job-listings-scraper]
 
