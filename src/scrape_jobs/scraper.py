@@ -8,6 +8,7 @@ def main() -> None:
     response = requests.get(base_url)
     soup = BeautifulSoup(response.text, "html.parser")
 
+    print("Scraping job listings from the website... This may take a moment. 🕵️‍♂️")
     # Find all job titles on the main page. Each job title is contained in an <h2> element with the class "title".
     titles = soup.find_all("h2", class_="title")
     number_job = 0
@@ -34,3 +35,5 @@ def main() -> None:
             # Write the job details to the CSV file
             writer.writerow([job_title.get_text(), company.get_text(), description[0].get_text(), location])
             number_job += 1
+    
+    print(f"Scraping completed. {number_job} job listings have been saved to jobs.csv. 📂")
